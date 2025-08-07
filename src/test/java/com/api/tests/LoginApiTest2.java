@@ -25,7 +25,7 @@ public class LoginApiTest2 {
 		System.out.println(loginResponse.getToken());
 		System.out.println(loginResponse.getEmail());
 		System.out.println(loginResponse.getId());
-		
+		//Checking with assertion
 		Assert.assertTrue(loginResponse.getType()!= null);
 		Assert.assertEquals(loginResponse.getEmail(),"TestBot@gmail.com");
 		Assert.assertEquals(loginResponse.getId(),997);
