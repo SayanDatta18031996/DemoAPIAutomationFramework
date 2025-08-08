@@ -22,6 +22,10 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+    # Create the directory before running the test
+    - name: Create logs directory
+      run: mkdir -p logs
+      
     - name: Execute test
       run: mvn clean test -Dsuite=suite -X
 
