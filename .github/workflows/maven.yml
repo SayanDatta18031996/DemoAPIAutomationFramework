@@ -46,7 +46,7 @@ jobs:
     
     - name: Publish Test Report
       if: always()
-      uses: dorny/test-reporter@1.9.1
+      uses: dorny/test-reporter@v1.8.0
       with:
         name: TestNG Results
         path: target/surefire-reports/junitreports/TEST-*.xml
